@@ -6,12 +6,17 @@ import { withKnobs, select, boolean} from '@storybook/addon-knobs';
 
 import { Button } from '../../components';
 
+// import { ListCard } from '../../components';
+
 const stories = storiesOf('Button', module);
 
 stories.addDecorator(withKnobs);
 
 stories
-  .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
+  // .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
+  .add('withText', () => <Button>Holaaa Button</Button>)
+
+
   .add('with some emoji', () => (
     <Button>
       <span role="img" aria-label="so cool">
